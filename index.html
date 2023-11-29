@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Email Signature Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="signature-form">
+        <input type="text" id="name" placeholder="Name">
+        <input type="text" id="title" placeholder="Title">
+        <!-- Add other fields as needed -->
+        <input type="url" id="website" placeholder="Website URL">
+        <input type="file" id="logo" accept="image/*">
+        <button onclick="generateSignature()">Generate Signature</button>
+    </div>
+
+    <div id="signature-preview">
+        <!-- Live preview will be shown here -->
+    </div>
+
+    <textarea id="signature-html" readonly></textarea>
+
+    <script src="script.js"></script>
+</body>
+</html>
